@@ -21,10 +21,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/custom.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '@/plugins/main.js', mode: 'client' },
+    { src: '@/plugins/test.js', mode: 'server' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
